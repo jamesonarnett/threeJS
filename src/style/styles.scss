@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  margin: 0;
+  color: white;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+  width: 100vw;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  opacity: 80%;
+}
+
+p {
+  line-height: 1.3;
+  font-size: 1rem;
+}
+
+.section1 {
+  grid-column: 1/8;
+  background-color: black;
+  margin: 1rem;
+
+  .intro {
+    margin: 3rem;
+    font-size: 2rem;
+  }
+
+  .about,
+  .about2 {
+    margin: 1rem 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+.section2 {
+  grid-column: 6 / 12;
+  background-color: black;
+  margin: 3rem 1rem;
+}
+
+.section3 {
+  grid-column: 1 / 7;
+  background-color: black;
+  margin: 3rem 1rem;
+}
